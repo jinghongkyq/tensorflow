@@ -68,3 +68,11 @@ Casts a tensor to a new type.
 x = tf.constant([1.8, 2.2], dtype=tf.float32)
 tf.cast(x, tf.int32)  # [1, 2], dtype=tf.int32
 ```
+
+### tf.reduce_mean
+```
+x = tf.constant([[1., 1.], [2., 2.]])
+tf.reduce_mean(x)  # 1.5
+tf.reduce_mean(x, 0)  # [1.5, 1.5]
+tf.reduce_mean(x, 1)  # [1.,  2.]
+```
